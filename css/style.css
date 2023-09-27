@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  /*display: inline;*/
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -606,13 +606,13 @@ h1, h2, h3, h4, h5, h6, figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
   color: #2D6CDF;
   padding-left: 10px;
   padding-right: 10px;
@@ -638,7 +638,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   top: .05em;
   font-family: 'icomoon';
-  speak: none;
+ 
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1105,7 +1105,7 @@ h1, h2, h3, h4, h5, h6, figure {
   background: rgba(0, 0, 0, 0.1);
 }
 #fh5co-gallery h2 span:before {
-  lett: 0;
+  left: 0;
   margin-left: -125px;
 }
 #fh5co-gallery h2 span:after {
@@ -1167,7 +1167,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 @media screen and (max-width: 768px) {
   #fh5co-footer .fh5co-widget {
-    text-align: left;
+    text-align:left;
   }
 }
 #fh5co-footer .fh5co-widget h3 {
@@ -1257,7 +1257,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   right: 0px;
   font-family: 'icomoon';
-  speak: none;
+  
   font-style: normal;
   font-weight: normal;
   font-variant: normal;

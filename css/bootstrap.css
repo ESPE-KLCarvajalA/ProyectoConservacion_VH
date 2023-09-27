@@ -1344,9 +1344,15 @@ pre code {
   }
 }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
+
+  @media (min-width: 992px) {
+     .col-md-2 {
+      float:right;
+    }
+
 
   .col-md-1 {
     width: 8.33333%;
@@ -1453,7 +1459,7 @@ pre code {
   }
 
   .col-md-push-1 {
-    left: 8.33333%;
+    right: 8.33333%;
   }
 
   .col-md-push-2 {
