@@ -18,6 +18,14 @@ body {
   color: #828282;
   background: #fff;
 }
+.linea-separadora {
+  width: 75%;
+  border: none;
+  height: 2px;
+  background-color: #333;
+  margin: 20px auto;
+}
+
 
 #page {
   position: relative;
