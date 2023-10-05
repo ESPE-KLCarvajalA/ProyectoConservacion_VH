@@ -1368,6 +1368,9 @@ pre code {
   .colu-md-3 {
     width: 50%;
   }
+  .colum-md-3 {
+    width: 30%;
+  }
 
   .col-md-4 {
     width: 33.33333%;
