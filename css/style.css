@@ -436,10 +436,10 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .services {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
   margin-bottom: 40px;
-  position: relative;
+  position:relative;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -474,7 +474,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .services .icon i {
   display: table-cell;
-  vertical-align: middle;
+  vertical-align:middle;
   font-size: 40px;
   line-height: 40px;
   color: #000;
