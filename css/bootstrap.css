@@ -1363,12 +1363,12 @@ pre code {
   }
 
   .col-md-3 {
-    width: 33.33333%;
+    width: 20%;
   }
   .colu-md-3 {
     width: 50%;
   }
-  .columna-md-3 {
+  .columna {
     width: 30%;
   }
 
