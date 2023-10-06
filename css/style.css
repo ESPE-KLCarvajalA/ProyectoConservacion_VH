@@ -443,6 +443,14 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+
+  background-color: #f0f0f0; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  text-align: center; 
+  height: 400px; 
+  width: 100%;
 }
 .services h3 {
   font-size: 18px;
@@ -1620,16 +1628,7 @@ h1, h2, h3, h4, h5, h6, figure {
   padding-bottom: 4em !important;
 }
 
-.caja {
-  background-color: #f0f0f0; /* Color de fondo */
-    padding: 10px; /* Espaciado interno reducido */
-    border: 1px solid #ccc; /* Borde */
-    border-radius: 5px; /* Bordes redondeados */
-    max-width: 200px; /* Ancho máximo de la caja */
-  
-    margin: 0 auto; /* Centra la caja horizontalmente */
-    text-align: center; /* Alineación del texto al centro */
-}
+
 .row-pb-sm {
   padding-bottom: 2em !important;
 }
