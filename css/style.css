@@ -1034,6 +1034,10 @@ h1, h2, h3, h4, h5, h6, figure {
   float: left;
   display: block;
   margin-bottom: 40px;
+  position: relative;
+  overflow: hidden;
+  
+  
 }
 .staff .staff-img {
   width: 100%;

@@ -1531,7 +1531,7 @@ pre code {
 
       .columna2 {
         width: 20%;
-        height: 20%;
+        
         position: relative;
         min-height: 1px;
         padding-left: 15px;
@@ -7351,6 +7351,7 @@ pre code {
       .hidden-print {
         display: none !important;
       }
+      /*# sourceMappingURL=bootstrap.css.map */
     }
-
-    /*# sourceMappingURL=bootstrap.css.map */
+  }
+}
