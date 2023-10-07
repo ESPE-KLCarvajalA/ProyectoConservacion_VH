@@ -444,13 +444,13 @@ h1, h2, h3, h4, h5, h6, figure {
   -o-transition: 0.3s;
   transition: 0.3s;
 
-  background-color: #f0f0f0; 
+ /* background-color: #f0f0f0; 
   padding: 20px; 
   border: 1px solid #ccc; 
   border-radius: 5px; 
   text-align: center; 
   height: 400px; 
-  width: 100%;
+  width: 100%;*/
 }
 .services h3 {
   font-size: 18px;
@@ -1042,28 +1042,22 @@ h1, h2, h3, h4, h5, h6, figure {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  height: 300px;
+  height: 200px;
   margin-bottom: 20px;
   display: table;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  
 }
-.staff .staff-img:before {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  content: '';
-  background: rgba(255, 255, 255, 0.9);
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+.staff .staff-img:hover {
+  transform: scale(1.1); /* Cambia el factor de escala según tus preferencias */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+ 
 }
 .staff .staff-img .fh5co-social {
   opacity: 0;
   display: table-cell;
   vertical-align: middle;
-  height: 300px;
+  height: 200px;
   margin: 0;
   padding: 0;
   font-size: 14px;
