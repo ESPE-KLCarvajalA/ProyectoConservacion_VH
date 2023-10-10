@@ -2,18 +2,11 @@
 // Forms
 // --------------------------------------------------
 
-
-// Normalize non-controls
-//
-// Restyle and baseline non-control form elements.
-
 fieldset {
   padding: 0;
   margin: 0;
   border: 0;
-  // Chrome and Firefox set a `min-width: min-content;` on fieldsets,
-  // so we reset that to ensure it behaves more like a standard block element.
-  // See https://github.com/twbs/bootstrap/issues/12359.
+ 
   min-width: 0;
 }
 
@@ -31,19 +24,14 @@ legend {
 
 label {
   display: inline-block;
-  max-width: 100%; // Force IE8 to wrap long content (see https://github.com/twbs/bootstrap/issues/13141)
+  max-width: 100%; 
   margin-bottom: 5px;
   font-weight: bold;
 }
 
 
 // Normalize form controls
-//
-// While most of our form styles require extra classes, some basic normalization
-// is required to ensure optimum display with or without those classes to better
-// address browser inconsistencies.
 
-// Override content-box in Normalize (* isn't specific enough)
 input[type="search"] {
   @include box-sizing(border-box);
 }
@@ -120,7 +108,7 @@ output {
   line-height: $line-height-base;
   color: $input-color;
   background-color: $input-bg;
-  background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+  background-image: none; 
   border: 1px solid $input-border;
   border-radius: $input-border-radius; // Note: This has no effect on <select>s in some browsers, due to the limited stylability of <select>s in CSS.
   @include box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
@@ -133,15 +121,12 @@ output {
   @include placeholder;
 
   // Disabled and read-only inputs
-  //
-  // HTML5 says that controls under a fieldset > legend:first-child won't be
-  // disabled if the fieldset is disabled. Due to implementation difficulty, we
-  // don't honor that edge case; we style them as disabled anyway.
+
   &[disabled],
   &[readonly],
   fieldset[disabled] & {
     background-color: $input-bg-disabled;
-    opacity: 1; // iOS fix for unreadable disabled content; see https://github.com/twbs/bootstrap/issues/11655
+    opacity: 1; 
   }
 
   &[disabled],
@@ -159,11 +144,7 @@ textarea.form-control {
 
 
 // Search inputs in iOS
-//
-// This overrides the extra rounded corners on search inputs in iOS so that our
-// `.form-control` class can properly style them. Note that this cannot simply
-// be added to `.form-control` as it's not specific enough. For details, see
-// https://github.com/twbs/bootstrap/issues/11586.
+
 
 input[type="search"] {
   -webkit-appearance: none;
@@ -171,13 +152,7 @@ input[type="search"] {
 
 
 // Special styles for iOS temporal inputs
-//
-// In Mobile Safari, setting `display: block` on temporal inputs causes the
-// text within the input to become vertically misaligned. As a workaround, we
-// set a pixel line-height that matches the given height of the input, but only
-// for Safari. See https://bugs.webkit.org/show_bug.cgi?id=139848
-//
-// Note that as of 8.3, iOS doesn't support `datetime` or `week`.
+
 
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   input[type="date"],
@@ -315,12 +290,7 @@ input[type="checkbox"] {
 
 
 // Form control sizing
-//
-// Build on `.form-control` with modifier classes to decrease or increase the
-// height and font-size of form controls.
-//
-// The `.form-group-* form-control` variations are sadly duplicated to avoid the
-// issue documented in https://github.com/twbs/bootstrap/issues/15074.
+
 
 @include input-size('.input-sm', $input-height-small, $padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small, $input-border-radius-small);
 .form-group-sm {
@@ -453,17 +423,7 @@ input[type="checkbox"] {
 
 
 // Inline forms
-//
-// Make forms appear inline(-block) by adding the `.form-inline` class. Inline
-// forms begin stacked on extra small (mobile) devices and then go inline when
-// viewports reach <768px.
-//
-// Requires wrapping inputs and labels with `.form-group` for proper display of
-// default HTML form controls and our custom form controls (e.g., input groups).
-//
-// Heads up! This is mixin-ed into `.navbar-form` in navbars.less.
 
-// [converter] extracted from `.form-inline` for libsass compatibility
 @mixin form-inline {
 
   // Kick in the inline

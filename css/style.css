@@ -7,7 +7,7 @@
 }
 /* =======================================================
 *
-* 	Template Style 
+*  Style 
 *
 * ======================================================= */
 body {
@@ -661,7 +661,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  /* Mejor representación de fuentes =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -981,13 +981,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .simply-countdown {
-  /* The countdown */
+  /* La cuenta regresiva*/
   margin-top: 3em;
   margin-bottom: 3em;
 }
 
 .simply-countdown > .simply-section {
-  /* coutndown blocks */
+  /* bloques de cuenta regresiva */
   display: inline-block;
   width: 120px;
   height: 120px;
@@ -1002,7 +1002,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .simply-countdown > .simply-section > div {
-  /* countdown block inner div */
+  /*div interno del bloque de cuenta regresiva*/
   display: table-cell;
   vertical-align: middle;
   height: 115px;
@@ -1013,12 +1013,12 @@ h1, h2, h3, h4, h5, h6, figure {
 .simply-countdown > .simply-section .simply-word {
   display: block;
   color: white;
-  /* amounts and words */
+  /* cantidades y palabras */
 }
 
 .simply-countdown > .simply-section .simply-amount {
   font-size: 40px;
-  /* amounts */
+  /* cantidades */
 }
 
 .simply-countdown > .simply-section .simply-word {
@@ -1027,7 +1027,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-size: 12px;
   letter-spacing: 2px;
   font-weight: 700;
-  /* words */
+  /* palabras */
 }
 
 .staff {
@@ -1279,7 +1279,7 @@ h1, h2, h3, h4, h5, h6, figure {
   font-variant: normal;
   text-transform: none;
   line-height: 1;
-  /* Better Font Rendering =========== */
+  /* Mejor representación de fuentes =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   content: "\ea1c";

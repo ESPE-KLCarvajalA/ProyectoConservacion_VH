@@ -1,7 +1,4 @@
 // Vendor Prefixes
-//
-// All vendor mixins are deprecated as of v3.2.0 due to the introduction of
-// Autoprefixer in our Gruntfile. They will be removed in v4.
 
 // - Animations
 // - Backface visibility
@@ -102,7 +99,7 @@
   // Firefox
   &::-moz-placeholder {
     color: $color;
-    opacity: 1; // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526
+    opacity: 1; 
   }
   &:-ms-input-placeholder { color: $color; } // Internet Explorer 10+
   &::-webkit-input-placeholder  { color: $color; } // Safari and Chrome
@@ -130,7 +127,7 @@
 }
 @mixin skew($x, $y) {
   -webkit-transform: skewX($x) skewY($y);
-      -ms-transform: skewX($x) skewY($y); // See https://github.com/twbs/bootstrap/issues/4885; IE9+
+      -ms-transform: skewX($x) skewY($y); 
        -o-transform: skewX($x) skewY($y);
           transform: skewX($x) skewY($y);
 }
