@@ -1043,6 +1043,11 @@ pre code {
   padding-right: 15px;
 }
 
+.columna3{
+  padding-right: 25px;
+}
+
+
 .col-xs-1,
 .col-xs-2,
 .col-xs-3,
@@ -1525,7 +1530,6 @@ pre code {
 
       .columna2 {
         width: 20%;
-        
         position: relative;
         min-height: 1px;
         padding-left: 15px;
