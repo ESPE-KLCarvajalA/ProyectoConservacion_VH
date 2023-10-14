@@ -1043,9 +1043,7 @@ pre code {
   padding-right: 15px;
 }
 
-.columna31{
-  padding-right: 25px;
-}
+
 
 
 .col-xs-1,
@@ -1538,8 +1536,27 @@ pre code {
 
 
       .columna3 {
-        width: 50%;
+        width: 33.33333%;
       }
+
+      .columna4 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 25%;
+        float: left;
+      }
+      .columna5 {
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 50%;
+        float: left;
+      }
+
+
 
       .col-md-5 {
         width: 41.66667%;
