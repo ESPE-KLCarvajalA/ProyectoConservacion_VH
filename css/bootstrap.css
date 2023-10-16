@@ -371,6 +371,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+.img-responsive1 {
+  display: flexbox;
+  align-items: end;
+  max-width: 100%;
+  height: 200px;
+}
 
 .img-rounded {
   border-radius: 6px;
@@ -1547,12 +1553,22 @@ pre code {
         width: 25%;
         float: left;
       }
+
       .columna5 {
         position: relative;
         min-height: 1px;
         padding-left: 15px;
         padding-right: 15px;
         width: 50%;
+        float: left;
+      }
+
+      .columna7 {
+        width: 50%;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
         float: left;
       }
 
