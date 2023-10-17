@@ -1572,6 +1572,17 @@ pre code {
         float: left;
       }
 
+      .columna8 {
+        width: 50%;
+        float: left;
+        position: relative;
+        min-height: 1px;
+        padding-left: 15px;
+        padding-right: 15px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
 
 
       .col-md-5 {
@@ -1603,7 +1614,7 @@ pre code {
       }
 
       .col-md-12 {
-        width: 100%;
+        width: 75%;
       }
 
       .col-md-pull-0 {

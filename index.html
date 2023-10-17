@@ -31,6 +31,8 @@
 	<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+	<script src="https://openseadragon.github.io/openseadragon/openseadragon.min.js"></script>
+
 
 
 
@@ -51,9 +53,9 @@
 						</div>
 						<div class="col-xs-10 text-right menu-1">
 							<ul>
-								<li class="active"><a href="index.html">Inicio</a></li>
+								<li class="active"><a href="index.html"><strong>Inicio</strong></a></li>
 								<li class="has-dropdown">
-									<a href="periodos.html">Periodos</a>
+									<a href="periodos.html"><strong>Periodos</strong></a>
 									<ul class="dropdown">
 										<li><a href="periodo1.html">Periodo I</a></li>
 										<li><a href="periodo2.html">Periodo II</a></li>
@@ -61,8 +63,9 @@
 										<li><a href="periodo4.html">Periodo VI</a></li>
 									</ul>
 								</li>
-								<li><a href="personal.html">Personal</a></li>
-								<li><a href="nosotros.html">Sobre Nosotros</a></li>
+								<li><a href="recintos.html"><strong>Recintos</strong></a></li>
+								<li><a href="personal.html"><strong>Personal</strong></a></li>
+								<li><a href="nosotros.html"><strong>Sobre Nosotros</strong></a></li>
 
 							</ul>
 						</div>
@@ -81,9 +84,9 @@
 							<div class="row">
 								<div class="col-md-8 col-md-offset-2 text-center slider-text">
 									<div class="slider-text-inner">
-										<h1>Proyecto "Conservación y Restauración Vegetal en Afluentes Hídricos para
-											Mitigar el
-											Cambio Climático en la Parroquia Valle Hermoso"</h1>
+										<h2>Proyecto</h2>
+										<h1>Conservación y Restauración Vegetal en Afluentes Hídricos para
+											Mitigar el Cambio Climático en la Parroquia Valle Hermoso</h1>
 
 									</div>
 								</div>
@@ -101,20 +104,18 @@
 		</aside>
 
 
-
 		<div id="fh5co-about">
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
+					<div class="col-md-6 col-sm-12 col-xs-12 animate-box">
 						<div class="section-title text-center wow zoomIn">
-							<h1>Frequently Asked Questions</h1>
-							<span></span>
-							<p>Our Frequently Asked Questions here.</p>
+							<h2>Descripción</h2>
+
 						</div>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-md-6 col-sm-12 col-xs-12">
+					<div class="col-md-6 col-sm-12 col-xs-12 animate-box">
 						<div class="panel-group " id="accordion" role="tablist" aria-multiselectable="true">
 							<!-- Panel 1 -->
 							<div class="panel panel-default">
@@ -330,29 +331,38 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-md-6 col-sm-12 col-xs-12 animate-box">
+						<div id="image-viewer" style="width: 100%; height: 500px;"></div>
+
+							<img class="img-responsive" src="images/mapa.JPG" alt="">
+
+						
+					</div>
 				</div>
 
 			</div>
 		</div>
 
-
-
-
-
 		<div id="fh5co-about">
-			<div class="container">
-				<div class="col-md-6 animate-box text-right ">
-					<div class="descrip">
-						<h2>Descripción</h2>
-					</div>
-					<p>Contribuir al repoblamiento forestal de afluentes hídricos y mejorar
-						los sistemas de producción agroforestal, mediante la implantación de especies
-						multipropósito, entre otras especies forestales con la finalidad de contrarrestar los
-						efectos del cambio climático,en la parroquia Valle Hermoso</p>
+			<div class="container" class="fh5co-bg-section">
+				<div class="row ">
+					<div class="col-md-6 animate-box  ">
+						<div class="descri">
+							<p>Contribuir al repoblamiento forestal de afluentes hídricos y mejorar
+								los sistemas de producción agroforestal, mediante la implantación de especies
+								multipropósito, entre otras especies forestales con la finalidad de contrarrestar
+								los
+								efectos del cambio climático,en la parroquia Valle Hermoso</p>
+						</div>
 
-				</div>
-				<div class="col-md-6">
-					<img class="img-responsive" src="images/portada-1.jpg">
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="imagen-des">
+							<img class="img-responsive " src="images/portada-1.jpg">
+
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -517,84 +527,116 @@
 							</div>
 						</div>
 					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="fh5co-blog animate-box">
+							<a href="recinto6.html" class="blog-img-holder"
+								style="background-image: url(images/recinto6.jpg);"></a>
+							<div class="blog-text">
+								<h3><a href="recinto6.html">Las Palmas</a></h3>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="descri1">
+						<span><a href="recintos.html" class="btn btn-primary btn-sm btn-course">Ver más</a></span>
+
+					</div>
+
 				</div>
 			</div>
 
 		</div>
 
-		<div class="container">
-			<div class="row animate-boxs">
-				<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
-					<h2>Periodos</h2>
+		<div id="fh5co-course">
+			<div class="container">
+				<div class="row animate-boxs">
+					<div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+						<h2>Periodos</h2>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6 animate-box">
+						<div class="course">
+							<a href="periodo1.html" class="course-img"
+								style="background-image: url(images/fase-1.JPG);">
+							</a>
+							<div class="desc">
+								<h3><a href="periodo1.html">Periodo 202150 (MAY 21 - SEP 21)</a></h3>
+								<p> Levantamiento de información realizada por los estudiantes hacia los
+									beneficiarios para
+									la solicitud de las plantas. Creación del material divulgativo y
+									capacitación a los beneficiarios del recinto con temas de densidades
+									poblacionales y
+									diseño de plantaciones.
+								</p>
+								<span><a href="periodo1.html" class="btn btn-primary btn-sm btn-course">Leer
+										más</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="course">
+							<a href="periodo2.html" class="course-img"
+								style="background-image: url(images/fase2-1.jpg);">
+							</a>
+							<div class="desc">
+								<h3><a href="periodo2.html">Periodo 202151 (OCT 21 - FEB 22)</a></h3>
+								<p>Reconocimiento del área de trabajo,
+									socialización de las actividades a realizar
+									en las fincas designadas, conversatorio
+									con la presidenta del Recinto 9 Octubre
+									para ubicación de beneficiarios, cuantificación de las plantas, medición
+									de pendiente y logotipo del proyecto.</p>
+								<span><a href="periodo2.html" class="btn btn-primary btn-sm btn-course">Leer
+										más</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="course">
+							<a href="periodo3.html" class="course-img"
+								style="background-image: url(images/fase2-2.jpg);">
+							</a>
+							<div class="desc">
+								<h3><a href="periodo3.html">Periodo 202250 (ABR 22 - AGO 22)</a></h3>
+								<p>Entrega de plantas, se realizo el procedimiento de
+									firma del acta de entrega y se explicó el
+									compromiso del proyecto. Mantenimiento y
+									propagación de diferentes especies de plantas. Elaboración de
+									trípticos e informes de diagnóstico de nuevos recintos.
+								</p>
+								<span><a href="periodo3.html" class="btn btn-primary btn-sm btn-course">Leer
+										más</a></span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 animate-box">
+						<div class="course">
+							<a href="periodo4.html" class="course-img" style="background-image: url(images/f24.jpg);">
+							</a>
+							<div class="desc">
+								<h3><a href="periodo4.html">Periodo 202251 (OCT 22 - MAR 23)</a></h3>
+								<p>Elaboración de encuestas para actualizar el diagnóstico del proyecto.
+									Reconocimiento del
+									Recinto "El Triunfo"
+									Diagnóstico a beneficiarios. Seguimiento de actividades, medición de plantas
+									en fincas. Siembra de caña guadúa en orillas de las fuentes hidrícas.
+								</p>
+								<span><a href="periodo4.html" class="btn btn-primary btn-sm btn-course">Leer
+										más</a></span>
+							</div>
+						</div>
+					</div>
 
 				</div>
 			</div>
-			<div class="row">
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="periodo1.html" class="course-img" style="background-image: url(images/fase-1.JPG);">
-						</a>
-						<div class="desc">
-							<h3><a href="periodo1.html">Periodo 202150 (MAY 21 - SEP 21)</a></h3>
-							<p> Levantamiento de información realizada por los estudiantes hacia los beneficiarios para
-								la solicitud de las plantas. Creación del material divulgativo y
-								capacitación a los beneficiarios del recinto con temas de densidades poblacionales y
-								diseño de plantaciones.
-							</p>
-							<span><a href="periodo1.html" class="btn btn-primary btn-sm btn-course">Leer más</a></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="periodo2.html" class="course-img" style="background-image: url(images/fase2-1.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="periodo2.html">Periodo 202151 (OCT 21 - FEB 22)</a></h3>
-							<p>Reconocimiento del área de trabajo,
-								socialización de las actividades a realizar
-								en las fincas designadas, conversatorio
-								con la presidenta del Recinto 9 Octubre
-								para ubicación de beneficiarios, cuantificación de las plantas, medición
-								de pendiente y logotipo del proyecto.</p>
-							<span><a href="periodo2.html" class="btn btn-primary btn-sm btn-course">Leer más</a></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="periodo3.html" class="course-img" style="background-image: url(images/fase2-2.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="periodo3.html">Periodo 202250 (ABR 22 - AGO 22)</a></h3>
-							<p>Entrega de plantas, se realizo el procedimiento de
-								firma del acta de entrega y se explicó el
-								compromiso del proyecto. Mantenimiento y
-								propagación de diferentes especies de plantas. Elaboración de
-								trípticos e informes de diagnóstico de nuevos recintos.
-							</p>
-							<span><a href="periodo3.html" class="btn btn-primary btn-sm btn-course">Leer más</a></span>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 animate-box">
-					<div class="course">
-						<a href="periodo4.html" class="course-img" style="background-image: url(images/f24.jpg);">
-						</a>
-						<div class="desc">
-							<h3><a href="periodo4.html">Periodo 202251 (OCT 22 - MAR 23)</a></h3>
-							<p>Elaboración de encuestas para actualizar el diagnóstico del proyecto. Reconocimiento del
-								Recinto "El Triunfo"
-								Diagnóstico a beneficiarios. Seguimiento de actividades, medición de plantas
-								en fincas. Siembra de caña guadúa en orillas de las fuentes hidrícas.
-							</p>
-							<span><a href="periodo4.html" class="btn btn-primary btn-sm btn-course">Leer más</a></span>
-						</div>
-					</div>
-				</div>
 
-			</div>
 		</div>
+
+
+
 
 		<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
 			<div class="overlay"></div>
@@ -603,7 +645,8 @@
 					<div class="col-md-3 columna1 fh5co-widget">
 						<h3>Sobre el Proyecto</h3>
 						<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit officiis impedit aperiam
-							voluptatibus deserunt doloribus mollitia laudantium laboriosam! Asperiores error tempore et
+							voluptatibus deserunt doloribus mollitia laudantium laboriosam! Asperiores error tempore
+							et
 							consequatur dolores vero eveniet temporibus deserunt repellendus. Cum.</p>
 					</div>
 					<div class="col-md-2 col-sm-4 col-xs-6 col-md-push-1 fh5co-widget">

@@ -11,7 +11,7 @@
 *
 * ======================================================= */
 body {
-  font-family: "Source Sans Pro", Arial,inherit;
+  font-family: "Source Sans Pro", fontawesome,inherit;
   font-weight: 400;
   font-size: 15px;
   line-height: 1.7;
@@ -321,7 +321,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   right: 0;
   content: '';
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 #fh5co-hero .flexslider .flex-control-nav {
@@ -389,7 +389,7 @@ h1, h2, h3, h4, h5, h6, figure {
   letter-spacing: 2px;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .btn:hover {
-  background: #2D6CDF !important;
+  background: #3cb683 !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
@@ -403,7 +403,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .fh5co-bg-section {
-  background: #e8e8e8;
+  background: #D4EFDF  ;
 }
 
 #fh5co-course-categories,
@@ -436,6 +436,8 @@ h1, h2, h3, h4, h5, h6, figure {
   }
 }
 
+
+
 .services {
   width: 90%;
   margin: 0 auto;
@@ -444,6 +446,7 @@ h1, h2, h3, h4, h5, h6, figure {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+ 
 
  /* background-color: #f0f0f0; 
   padding: 20px; 
@@ -492,7 +495,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: 0.3s;
 }
 .services:hover .icon, .services:focus .icon {
-  background: #2D6CDF;
+  background: #3cb683;
 }
 .services:hover .icon i, .services:focus .icon i {
   color: #fff;
@@ -604,7 +607,8 @@ h1, h2, h3, h4, h5, h6, figure {
   border-radius: 0;
 }
 .course .desc .btn-course:hover {
-  background: rgba(0, 0, 0, 0.8) !important;
+  background: #3cb683 !important;
+  border: 2px solid #3cb683 !important;
   color: white !important;
 }
 .course:hover .course-img {
@@ -631,7 +635,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   display: inline;
-  color: #2D6CDF;
+  color: #3cb683;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -689,6 +693,24 @@ h1, h2, h3, h4, h5, h6, figure {
 .fh5co-heading {
   margin-bottom: 5em;
 }
+.descri1 {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+ 
+ 
+}
+.descri {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  height: 250px; 
+ 
+}
+.descri p{
+  
+  text-align:right; 
+  
+}
 .descrip h2{
   font-size: 24px;
   margin-bottom: 20px;
@@ -723,7 +745,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 #fh5co-testimonial {
-  background: #1F5F8B;
+  background: #3cb683;
   position: relative;
 }
 #fh5co-testimonial .overlay {
@@ -844,6 +866,14 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 .pricing__feature-list li {
   margin-bottom: 10px;
+  padding: 10px;
+  margin: 5px;
+  transition: transform 0.3s;
+  padding: 5px 0;
+}
+
+.pricing__feature:hover {
+  transform: translateY(-5px); /* Levantar 5px hacia arriba al pasar el mouse */
 }
 
 .pricing__item {
@@ -1531,59 +1561,59 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 .btn-primary {
-  background: #2D6CDF;
+  background: #3cb683;
   color: #fff;
-  border: 2px solid #2D6CDF;
+  border: 2px solid #3cb683;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #437be2 !important;
-  border-color: #437be2 !important;
+  background: #3cb683 !important;
+  border-color: #3cb683 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
   color: #2D6CDF;
-  border: 2px solid #2D6CDF;
+  border: 2px solid #3cb683;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #2D6CDF;
+  background: #3cb683;
   color: #fff;
 }
 
 .btn-success {
-  background: #5cb85c;
+  background: #3cb683;
   color: #fff;
-  border: 2px solid #5cb85c;
+  border: 2px solid #3cb683;
 }
 .btn-success:hover, .btn-success:focus, .btn-success:active {
-  background: #4cae4c !important;
-  border-color: #4cae4c !important;
+  background: #3cb683 !important;
+  border-color: #3cb683 !important;
 }
 .btn-success.btn-outline {
   background: transparent;
-  color: #5cb85c;
-  border: 2px solid #5cb85c;
+  color: #3cb683;
+  border: 2px solid #3cb683;
 }
 .btn-success.btn-outline:hover, .btn-success.btn-outline:focus, .btn-success.btn-outline:active {
-  background: #5cb85c;
+  background: #3cb683;
   color: #fff;
 }
 
 .btn-info {
-  background: #5bc0de;
+  background: #3cb683;
   color: #fff;
-  border: 2px solid #5bc0de;
+  border: 2px solid #3cb683;
 }
 .btn-info:hover, .btn-info:focus, .btn-info:active {
-  background: #46b8da !important;
-  border-color: #46b8da !important;
+  background: #3cb683 !important;
+  border-color: #3cb683 !important;
 }
 .btn-info.btn-outline {
   background: transparent;
-  color: #5bc0de;
-  border: 2px solid #5bc0de;
+  color: #3cb683;
+  border: 2px solid #3cb683;
 }
 .btn-info.btn-outline:hover, .btn-info.btn-outline:focus, .btn-info.btn-outline:active {
-  background: #5bc0de;
+  background: #3cb683;
   color: #fff;
 }
 
@@ -1710,6 +1740,7 @@ h1, h2, h3, h4, h5, h6, figure {
   opacity: 0;
 }
 
+/*---------------------------------------ACORDION--------------------------------------*/
 .template_faq {
   background: #edf3fe none repeat scroll 0 0;
 }
@@ -1719,6 +1750,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 0 5px 30px 0  #3cb68379;
   margin-bottom: 0;
   padding: 30px;
+  height: 100%;
   
 }
 #accordion .panel {
@@ -1786,8 +1818,33 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 
 
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio, ajusta según tu video */
+}
 
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: transform 1s ease-in-out; /* Duración y efecto de la animación */
+}
 
+.video-container:hover video {
+  transform: translateX(50px); /* Ajusta la cantidad y dirección del desplazamiento */
+}
 
+.zoomable {
+  overflow: hidden;
+  transition: transform 0.3s; /* Duración de la transición */
+}
+
+.zoomable:hover img {
+  transform: scale(1.1); /* Ajusta el valor para el nivel de zoom deseado */
+}
 
 /*# sourceMappingURL=style.css.map */
