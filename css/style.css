@@ -1282,9 +1282,13 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-footer .copyright .block {
   display: block;
+  text-align: center; /* Centrar horizontalmente */
+
+  align-items: center; /* Centrar verticalmente */
+  justify-content: center; /* Centrar horizontalmente */
 }
 #fh5co-footer .copyright .block a {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgb(255, 255, 255);
 }
 
 #map {
@@ -1838,13 +1842,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transform: translateX(50px); /* Ajusta la cantidad y dirección del desplazamiento */
 }
 
-.zoomable {
-  overflow: hidden;
-  transition: transform 0.3s; /* Duración de la transición */
-}
 
-.zoomable:hover img {
-  transform: scale(1.1); /* Ajusta el valor para el nivel de zoom deseado */
-}
+
 
 /*# sourceMappingURL=style.css.map */
