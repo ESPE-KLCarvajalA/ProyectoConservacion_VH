@@ -1,3 +1,4 @@
+
 .owl-theme .owl-controls {
     margin-top: 10px;
     text-align: center;
@@ -31,7 +32,7 @@
 .owl-theme .owl-dots .owl-dot {
     display: inline-block;
     zoom: 1;
-    *display: inline
+    display: inline
 }
 
 .owl-theme .owl-dots .owl-dot span {

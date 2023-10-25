@@ -22,7 +22,7 @@
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
-
+//
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
