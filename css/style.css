@@ -2175,86 +2175,48 @@ figure {
 }
 
 /* Barra de progreso*/
-.progress-title {
+.progress-container {
+  width: 100%;
+  height: 30px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  position: relative;
+  text-align: center;
   font-size: 18px;
-  font-weight: 700;
-  color: #333;
-  text-transform: uppercase;
-  margin: 0 0 25px;
+  color: #fff; /* Color del texto */
+  line-height: 30px; /* Centra verticalmente el texto */
+  overflow: hidden; /* Oculta cualquier contenido fuera del contenedor */
+  border-radius: 15px; 
 }
 
-.progress {
-  height: 10px;
-  background: #e9e9ea;
-  border-radius: 15px;
-  margin-bottom: 30px;
-  overflow: visible;
+.progress-bar {
+  width: 0;
+  height: 100%;
+  background-color: #3cb683; /* Verde */
+  transition: width 1s;
+  border-radius: 15px; /* Aplica bordes redondeados */
   position: relative;
 }
 
-.progress:before,
-.progress:after {
-  content: "";
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: #fff;
+.progress-label {
   position: absolute;
-  top: -5px;
-  left: 0;
-  z-index: 1;
-}
-
-.progress:after {
-  border: 7px solid #e9e9ea;
-  left: auto;
-  right: 0;
-}
-
-.progress .progress-bar {
-  box-shadow: none;
-  border: none;
-  border-radius: 15px;
-  position: relative;
-  -webkit-animation: animate-positive 1s;
-  animation: animate-positive 1s;
-}
-
-.progress .progress-value {
-  width: 70px;
-  height: 35px;
-  line-height: 27px;
-  border-radius: 20px;
-  background: #fff;
-  font-size: 17px;
-  font-weight: 600;
-  position: absolute;
-  top: -12px;
-  right: 0;
-  z-index: 2;
-}
-
-.progress.green:before {
-  border: 7px solid #3cb683;
+  right: -30px; /* Posición ajustada para el círculo */
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background-color: #fff; /* Círculo blanco */
+  border-radius: 50%; /* Hace que el círculo sea redondeado */
+  text-align: center;
+  font-size: 18px;
+  line-height: 30px;
+  color: #3cb683; /* Color verde para el número */
 }
 
 
-.progress.green .progress-value {
-  border: 5px solid #3cb683;
-  color: #3cb683;
-}
 
-@-webkit-keyframes animate-positive {
-  0% {
-    width: 0;
-  }
-}
 
-@keyframes animate-positive {
-  0% {
-    width: 0;
-  }
-}
+
+
 
 #contenedor-del-mapa {
   height: 500px;
@@ -2312,8 +2274,7 @@ figure {
 }
 
 .txt{
-  width: 50%;
-  display: none;
+  width: 100%;
   display: flex;
 }
 

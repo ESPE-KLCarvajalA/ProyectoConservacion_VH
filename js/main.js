@@ -301,6 +301,7 @@
 }());
 
 
+// slider - carrusel
 const carouselContainers = document.querySelectorAll('.carousel-container');
 const slideIndexes = Array.from(carouselContainers, () => 0);
 
@@ -333,3 +334,31 @@ setInterval(() => {
         nextSlide(index);
     });
 }, 3000);
+
+//barra progreso
+
+document.addEventListener("DOMContentLoaded", function () {
+    const progressBar = document.getElementById("progress");
+    const progressLabel = document.createElement("div");
+    progressLabel.className = "progress-label";
+    progressLabel.innerText = "75%";
+
+    function startProgress() {
+        let width = 0;
+        const interval = 100; // Milisegundos
+        const targetWidth = 75; // 75% de progreso
+
+        const animation = setInterval(() => {
+            width += 1;
+            progressBar.style.width = width + "%";
+
+            if (width >= targetWidth) {
+                clearInterval(animation);
+                // Muestra el número "75%" al finalizar
+                progressBar.appendChild(progressLabel);
+            }
+        }, interval);
+    }
+
+    startProgress();
+});
