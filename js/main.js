@@ -22,7 +22,7 @@
 			return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
 		}
 	};
-//
+
 	var mobileMenuOutsideClick = function() {
 
 		$(document).click(function (e) {
@@ -293,4 +293,43 @@
 	});
 
 
+	//
+
+	
+
+
 }());
+
+
+const carouselContainers = document.querySelectorAll('.carousel-container');
+const slideIndexes = Array.from(carouselContainers, () => 0);
+
+function showSlide(containerIndex, slideIndex) {
+    const slides = carouselContainers[containerIndex].querySelectorAll('.carousel-slide');
+    if (slideIndex < 0) {
+        slideIndexes[containerIndex] = slides.length - 1;
+    } else if (slideIndex >= slides.length) {
+        slideIndexes[containerIndex] = 0;
+    }
+
+    slides.forEach((slide) => {
+        slide.style.display = 'none';
+    });
+
+    slides[slideIndexes[containerIndex]].style.display = 'block';
+}
+
+function nextSlide(containerIndex) {
+    slideIndexes[containerIndex]++;
+    showSlide(containerIndex, slideIndexes[containerIndex]);
+}
+
+carouselContainers.forEach((container, index) => {
+    showSlide(index, slideIndexes[index]);
+});
+
+setInterval(() => {
+    carouselContainers.forEach((container, index) => {
+        nextSlide(index);
+    });
+}, 3000);
